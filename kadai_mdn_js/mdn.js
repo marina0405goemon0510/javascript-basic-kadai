@@ -1,9 +1,7 @@
 const date = new Date();
-const [month, day, year] = [
-date.getMonth(6) + 1,
-date.getDate(25),
-date.getFullYear(2025),
-];
 
-const formattedDate = 2025 + '年' + 5 + '月' + 25 + '日';
-console.log(formattedDate);
+const year = date.getFullYear(); // 現在の年を取得
+const month = date.getMonth() + 1; // 現在の月を取得（0から11で表されるため、+1する）
+const day = date.getDate(); // 現在の日を取得
+
+console.log(`${year}年${month}月${day}日`);
